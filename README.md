@@ -40,4 +40,16 @@ in order to convert our dataframes to SQL tables I used SQLAlchemy, the database
 
 
 
+### MACHINE LEARNING
+
+I used the sklearn library and split the DataFrame extracted from the table info into testing part and training part in order to predict the popularity of a track, using **RandomForestClassifier** and got an accuracy of 78% and a precision of 87% the classification report is included on the jupyter notebook "machine_learning_model"
+
+![classification_report](images/classfication_report.PNG)
+
+
+
+
+
+
+
 
