@@ -14,6 +14,26 @@ Friedrich Nietzsche once wrote:
 
 I chose this topic because it fuses my two passions, coding and music.
 
+### SOURCE DATA
+
+in order to build our predictive tool, we first needed the data to analyze and manipulate accordingly, Kaggle is a subsidiary of Google LLC that provides among other interesting things a public data platform, numerous variaties of datasets are available on the website and ready to be downloaded and used, So I turned to it to find useful data and found it [here](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db).\
+A .csv file named under the name SpotifyFeatures which contains more than 232,000 songs, approximately 10,000 tracks per genre and a totality of 26 genres as mentioned in Kaggle. A further Python coding was made to better understand the dataset, The jupyter notebook is provided in this repository in the "Jupyter Notebooks" directory under the name: first_analyse.ipynb.\
+The raw dataset has 18 columns:
+- **genre :** a string specifying the genre of the track (e.g. Movie, R&B...).
+- **artiste_name :** a string mentioning the artist that made the track.
+- **track_name :** a string specifying the track's name.
+- **track_id :** a string mentioning the Spotify ID for the track.
+- **popularity :** an int measure ranging between 0 and 100 mentioning the popularity of the track.
+- **acousticness :** a float which is a confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
+- **danceability :** a float that describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+- **duration_ms :** an int determining the duration of the track in milliseconds.\
+the rest of the columns are: **energy**, **instrumentalness**, **key**, **liveness**, **loudness**, **mode**, **speechiness**, **tempo**, **time_signature**, **valence** 
+
+### QUESTIONS TO BE ANSWERED
+
+- What makes a track popular?
+- How can we make a track that will be popular?
+
 
 
 
