@@ -34,22 +34,35 @@ the rest of the columns are: **energy**, **instrumentalness**, **key**, **livene
 - What makes a track popular?
 - How can we make a track that will be popular?
 
+
+### DATA PEPARATION
+
+We used `pandas` python library to load our csv file into a dataframe, we then proceedeed into cleaning the **genre** column, we then check if the dataframe had any null values. After this we created a new binary column for popularity 0 for unpopular songs and 1 for popular songs, we used the existing **popularity** column with a threshold of 50 to binarize the new column. We then dropped the columns that we first found to be ineffective in determining the popularity of a song such as the name of the track or the artist's name. The **time_signature** column was dropped as well as most of the tracks had the same time_signature.
+Later we custom encoded the **genre** column and One hot encoded the columns **key** and **mode**.
+
 ### DATA TO DATABASE
 
-in order to convert our dataframes to SQL tables I used SQLAlchemy, the database was named **Spotify_data** with two tables **songs** and **info**.
+in order to convert our dataframes to SQL tables using SQLAlchemy, the database was names **Spotify_data** with three tables **songs** and **info** and **encoded**.
+
+here's the ERD:
+
+![erd](/assets/ERD.png)
 
 
 
 ### MACHINE LEARNING
 
-I used the sklearn library and split the DataFrame extracted from the table info into testing part and training part in order to predict the popularity of a track, using **RandomForestClassifier** and got an accuracy of 78% and a precision of 87% the classification report is included on the jupyter notebook "machine_learning_model"
+I used the sklearn library and split the DataFrame extracted from the table encoded into testing part and training part in order to predict the popularity of a track, we scaled the data using **StandardScaler**, using **RandomForestClassifier** and got the following results:
 
-![classification_report](images/classfication_report.PNG)
+![classification_report](/assets/classification_report_first.PNG)
 
+In this report, the classifier has a precision of 0.95 for class 0 and 0.96 for class 1, a recall of 0.96 for class 0 and 0.95 for class 1, and an f1-score of 0.95 for class 0 and 0.96 for class 1.
 
-
-
-
-
+Overall, the classifier performs very well, with an accuracy of 0.96 and good precision, recall, and f1-scores for both classes.
 
 
+### Dashboard
+
+#### blueprint for Google Slides Storyboard
+
+the storyboard will be available [here](https://docs.google.com/presentation/d/e/2PACX-1vTqpsljA7XP9a0TlY1wD8qDnQqbDBlbLfxc7TLcXYecThPYyc6-D-P79wV7d_4hK5GuJRINQpm6rq0G/pub?start=true&loop=true&delayms=3000)
