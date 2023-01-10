@@ -61,8 +61,10 @@ In this report, the classifier has a precision of 0.95 for class 0 and 0.96 for 
 Overall, the classifier performs very well, with an accuracy of 0.96 and good precision, recall, and f1-scores for both classes.
 
 
-### Dashboard
+### Google Slides Presentation
 
-#### blueprint for Google Slides Storyboard
+the google slide presentation is available [here](https://docs.google.com/presentation/d/e/2PACX-1vTqpsljA7XP9a0TlY1wD8qDnQqbDBlbLfxc7TLcXYecThPYyc6-D-P79wV7d_4hK5GuJRINQpm6rq0G/pub?start=true&loop=false&delayms=60000)
 
-the storyboard will be available [here](https://docs.google.com/presentation/d/e/2PACX-1vTqpsljA7XP9a0TlY1wD8qDnQqbDBlbLfxc7TLcXYecThPYyc6-D-P79wV7d_4hK5GuJRINQpm6rq0G/pub?start=true&loop=true&delayms=3000)
+### Tableau Visualizations
+
+The visualizations made using Tableau are available [here](https://public.tableau.com/views/spotify22/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
