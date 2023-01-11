@@ -63,7 +63,7 @@ Overall, the classifier performs very well, with an accuracy of 0.96 and good pr
 
 ### Google Slides Presentation
 
-the google slide presentation is available [here](https://docs.google.com/presentation/d/e/2PACX-1vTqpsljA7XP9a0TlY1wD8qDnQqbDBlbLfxc7TLcXYecThPYyc6-D-P79wV7d_4hK5GuJRINQpm6rq0G/pub?start=true&loop=false&delayms=60000)
+the google slide presentation is available [here]https://docs.google.com/presentation/d/1Gez3zvh8hTQgre2ekXEFjG-gL5sxphr8D3gaok-qplg/edit?usp=sharing
 
 ### Tableau Visualizations
 
